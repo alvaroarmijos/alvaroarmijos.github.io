@@ -1,0 +1,15 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.zemoga.helpline",
+            "sha256_cert_fingerprints": [
+                "6F:41:B9:19:10:CB:DD:C9:C3:6F:24:4D:A0:6F:AE:A2:60:D9:31:5B:18:2A:98:B8:BE:1C:7E:20:F0:25:6B:70",
+                "98:A3:E3:4A:D4:0E:C6:F6:25:21:17:9C:2A:0B:69:E8:EE:DD:E1:24:75:20:58:66:79:5A:D0:38:9D:D3:A7:90"
+            ]
+        }
+    }
+]
