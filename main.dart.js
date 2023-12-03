@@ -64542,7 +64542,7 @@ l=n?k:o.hG(f,j,B.X)
 s=s.c
 s=A.hG(A.acw(k,k,B.eE,k,k,!0,k,A.Hk(A.a([A.Hk(k,s==null?k:s.hG(g,j,B.X),"10 "),B.Jf],t.VO),l,"Domingo "),B.bu,k,k,1,B.bv),B.cg)
 l=A.hG(A.kT("4:00pm",n?k:o.hG(f,j,B.X),B.aq),B.cg)
-return A.af1(A.a([h,p,B.Ik,m,B.hK,r,B.hK,q,B.hK,s,l,A.hG(A.kT("Sol de los Andes",n?k:o.hG(f,j,B.X),B.aq),B.cg),A.hG(B.Gt,B.A6),A.acR(A.vY(A.iY("assets/images/cake_piece.jpg",B.iE,k,k),260,k),B.i)],t.F),B.h4)}}
+return A.af1(A.a([h,p,B.Ik,m,B.hK,r,B.hK,q,B.hK,s,l,A.hG(A.kT("Sol de los Andes",n?k:o.hG(f,j,B.X),B.aq),B.cg),A.hG(B.Gt,B.A6),A.acR(A.vY(A.iY("assets/images/cake_piece.png",B.iE,k,k),260,k),B.i)],t.F),B.h4)}}
 A.uY.prototype={
 ac(){return new A.Lt(A.aeJ(),null,null,B.k)}}
 A.Lt.prototype={
