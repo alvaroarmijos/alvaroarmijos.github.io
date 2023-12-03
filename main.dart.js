@@ -64470,8 +64470,8 @@ $S:0}
 A.Ge.prototype={
 P(a){var s="Pangolin",r=A.aD(a),q=r.ax,p=r.p3,o=p.d
 o=A.kT("Estas invitado\npor",o==null?null:o.hG(q.f,s,B.X),B.aq)
-p=p.a
-return new A.Ap(A.af1(A.a([B.Io,o,B.Ik,A.kT("JOAQUIN\nEDUARDO",p==null?null:p.hG(q.b,s,B.X),B.aq),B.zz],t.F),B.h4),null)}}
+p=p.b
+return new A.Ap(A.af1(A.a([B.Io,o,B.Ij,A.kT("JOAQUIN\nEDUARDO",p==null?null:p.hG(q.b,s,B.X),B.aq),B.zz],t.F),B.h4),null)}}
 A.Ap.prototype={
 P(a){var s=null,r="assets/images/balloon.png"
 return A.GS(B.db,A.a([new A.ec(B.dc,s,s,A.iY("assets/images/header.png",s,s,s),s),B.wj,A.v0(s,A.acD(A.acQ(B.a6,0.6,A.iY(r,s,100,s),s),B.ax,200),s,s,s,s,250,s),A.v0(s,A.acD(A.acQ(B.a6,-0.6,A.iY(r,s,100,s),s),B.ax,200),s,s,s,s,400,s),A.v0(s,A.acD(A.iY(r,s,100,s),B.ax,200),s,s,s,0,600,s),this.c],t.F),B.eA)}}
@@ -64499,11 +64499,11 @@ case 6:case 3:return A.z(null,r)}})
 return A.A($async$$0,r)},
 $S:9}
 A.Gf.prototype={
-P(a){var s,r=null,q=A.aD(a),p=q.ax.b,o=A.iY("assets/images/banderin.png",r,r,r),n=q.p3.a
+P(a){var s,r=null,q=A.aD(a),p=q.ax.b,o=A.iY("assets/images/banderin.png",r,r,r),n=q.p3.b
 n=A.hG(A.kT("Celebremos juntos",n==null?r:n.hG(p,"Pangolin",B.X),B.aq),B.b_)
 s=A.Rc(20)
-s=A.Bk(r,A.Bk(r,A.iY("assets/images/kid.jpeg",B.iE,r,r),B.h,r,r,r,r,B.Ab,r),r,r,new A.iB(p,r,r,s,r,r,B.c7),400,r,B.Ad,400)
-return A.GS(B.db,A.a([new A.ec(B.dc,r,r,o,r),new A.ec(B.dc,r,r,new A.ja(B.Aa,n,r),r),A.hG(new A.ec(B.a6,r,r,new A.vR(s,B.A8,!0,r),r),B.ax),A.v0(-40,A.hG(A.iY("assets/images/cake.png",r,r,360),B.du),r,r,-40,r,r,r),B.zw],t.F),B.eA)}}
+s=A.Bk(r,A.Bk(r,A.iY("assets/images/kid.jpeg",B.iE,r,r),B.h,r,r,r,r,B.Ab,r),r,r,new A.iB(p,r,r,s,r,r,B.c7),300,r,B.Ad,300)
+return A.GS(B.db,A.a([new A.ec(B.dc,r,r,o,r),new A.ec(B.dc,r,r,new A.ja(B.Aa,n,r),r),A.hG(new A.ec(B.a6,r,r,new A.vR(s,B.A8,!0,r),r),B.ax),A.v0(-40,A.hG(A.iY("assets/images/cake.png",r,r,300),B.du),r,r,-40,r,r,r),B.zw],t.F),B.eA)}}
 A.rx.prototype={
 ac(){return new A.IE(B.k)}}
 A.IE.prototype={
@@ -64534,7 +64534,7 @@ p=A.hG(A.kT("Joaquin Eduardo",q?k:r.hG(g,j,B.X),B.aq),B.bH)
 o=s.d
 n=o==null
 m=A.hG(A.kT("Esta cumpliendo",n?k:o.hG(f,j,B.X),B.aq),B.b_)
-r=A.hG(A.kT("2",q?k:r.a1N(g,j,150,B.X),B.aq),B.ax)
+r=A.hG(A.kT("2",q?k:r.a1N(g,j,100,B.X),B.aq),B.ax)
 q=A.hG(A.kT("Vamos a celebrar",n?k:o.hG(f,j,B.X),B.aq),B.cg)
 o=s.f
 n=o==null
@@ -64542,7 +64542,7 @@ l=n?k:o.hG(f,j,B.X)
 s=s.c
 s=A.hG(A.acw(k,k,B.eE,k,k,!0,k,A.Hk(A.a([A.Hk(k,s==null?k:s.hG(g,j,B.X),"10 "),B.Jf],t.VO),l,"Domingo "),B.bu,k,k,1,B.bv),B.cg)
 l=A.hG(A.kT("4:00pm",n?k:o.hG(f,j,B.X),B.aq),B.cg)
-return A.af1(A.a([h,p,B.hK,m,B.hK,r,B.hK,q,B.Ij,s,l,A.hG(A.kT("Sol de los Andes",n?k:o.hG(f,j,B.X),B.aq),B.cg),A.hG(B.Gt,B.A6),A.acR(A.vY(A.iY("assets/images/cake_piece.jpg",B.iE,k,k),260,k),B.i)],t.F),B.h4)}}
+return A.af1(A.a([h,p,B.Ik,m,B.hK,r,B.hK,q,B.hK,s,l,A.hG(A.kT("Sol de los Andes",n?k:o.hG(f,j,B.X),B.aq),B.cg),A.hG(B.Gt,B.A6),A.acR(A.vY(A.iY("assets/images/cake_piece.jpg",B.iE,k,k),260,k),B.i)],t.F),B.h4)}}
 A.uY.prototype={
 ac(){return new A.Lt(A.aeJ(),null,null,B.k)}}
 A.Lt.prototype={
@@ -71163,9 +71163,9 @@ B.Ie=new A.Y(1e5,1e5)
 B.If=new A.Y(20,10)
 B.Ig=new A.Y(30,15)
 B.ez=new A.kQ(0,0,null,null)
-B.Ij=new A.kQ(null,10,null,null)
-B.Ik=new A.kQ(null,16,null,null)
-B.hK=new A.kQ(null,20,null,null)
+B.hK=new A.kQ(null,10,null,null)
+B.Ij=new A.kQ(null,16,null,null)
+B.Ik=new A.kQ(null,20,null,null)
 B.Il=new A.w0(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.PR=new A.w3(3,"hide")
 B.Im=new A.w3(5,"timeout")
