@@ -1,6 +1,6 @@
 {
-    "name": "invitations_app",
-    "short_name": "invitations_app",
+    "name": "flutter_portfolio",
+    "short_name": "flutter_portfolio",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
