@@ -1,38 +1,469 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
-
   <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="home_asset_management_app">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alvaro Armijos — Flutter Engineer from Ecuador. 6+ years building production-grade mobile applications for global teams.">
+  <title>Alvaro Armijos · Flutter Engineer</title>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="shortcut icon" href="favicon.ico">
 
-  <title>home_asset_management_app</title>
-  <link rel="manifest" href="manifest.json">
+  <!-- Preload hero image -->
+  <link rel="preload" as="image" href="assets/img/photo-seated.webp" fetchpriority="high">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap">
+
+  <link rel="stylesheet" href="styles.css?v=20260517">
 </head>
 <body>
-  <script src="flutter_bootstrap.js" async></script>
+
+  <!-- Skip link -->
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Mouse gradient mesh -->
+  <div class="mouse-gradient" aria-hidden="true"></div>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" aria-hidden="true">
+    <span data-scroll-progress></span>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" data-cursor-root aria-hidden="true">
+    <span class="cursor-dot"></span>
+    <span class="cursor-ring"></span>
+  </div>
+
+  <!-- ─── Navigation ────────────────────────────────────── -->
+  <header role="banner">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo" data-scramble aria-label="Alvaro Armijos — home">
+        Alvaro Armijos
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#about"  class="nav-link">About</a></li>
+        <li><a href="#craft"  class="nav-link">Craft</a></li>
+        <li><a href="#career" class="nav-link">Career</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="nav-cta">Get in touch</a>
+
+      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile overlay -->
+    <nav class="nav-mobile" aria-hidden="true" aria-label="Mobile navigation">
+      <a href="#about"   class="nav-mobile-link">About</a>
+      <a href="#craft"   class="nav-mobile-link">Craft</a>
+      <a href="#career"  class="nav-mobile-link">Career</a>
+      <a href="#contact" class="nav-mobile-link">Get in touch</a>
+    </nav>
+  </header>
+
+  <!-- ─── Main content ──────────────────────────────────── -->
+  <main id="main">
+
+    <!-- ═══ HERO ═══════════════════════════════════════════ -->
+    <section class="hero" id="hero" aria-label="Introduction">
+
+      <div class="hero-left">
+        <p class="hero-kicker" aria-hidden="true">
+          <span>Flutter Engineer</span>
+        </p>
+
+        <h1 class="hero-name" aria-label="Alvaro Armijos">
+          <span class="name-line"><span class="name-inner">Alvaro</span></span>
+          <span class="name-line"><span class="name-inner">Armijos</span></span>
+        </h1>
+
+        <p class="hero-tagline">
+          I craft mobile experiences that people love to use.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="#about"   class="btn btn-ghost">About me</a>
+        </div>
+
+        <p class="hero-location">
+          <span class="hero-location-dot" aria-hidden="true"></span>
+          Ecuador · Available
+        </p>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-photo-wrap">
+          <img
+            src="assets/img/photo-seated.webp"
+            alt="Alvaro Armijos — Flutter Engineer"
+            class="hero-photo"
+            fetchpriority="high"
+            loading="eager"
+            decoding="sync"
+          >
+        </div>
+      </div>
+
+      <p class="hero-scroll" aria-hidden="true">Scroll</p>
+    </section>
+
+    <!-- ═══ ABOUT ════════════════════════════════════════════ -->
+    <section class="about" id="about" aria-label="About Alvaro">
+      <div class="about-inner">
+        <div class="about-grid">
+
+          <div class="about-photo-col" data-reveal>
+            <img
+              src="assets/img/photo-standing.webp"
+              alt="Alvaro Armijos standing"
+              class="about-photo"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+
+          <div class="about-text-col">
+            <p class="section-label" data-reveal>About</p>
+
+            <h2 class="about-quote" data-reveal data-delay="2">
+              Building software is a craft.<br>
+              I treat it like <em>one</em>.
+            </h2>
+
+            <div class="about-body" data-reveal data-delay="3">
+              <p>
+                I'm a Flutter Engineer from Ecuador with over six years of experience turning product requirements into production-grade mobile applications. I've worked with teams across the Americas and Europe, shipping apps that users actually remember.
+              </p>
+              <p>
+                Currently at Very Good Ventures, I help clients bring their most ambitious Flutter products to life — covering architecture decisions, performance optimization, test coverage, and everything in between. I don't consider a feature done until it's tested, measured, and something I'd be proud to inherit.
+              </p>
+              <p>
+                Beyond the code, I spent two years as a Flutter instructor at the University of Hemisferios — designing courses from scratch, guiding students through real-world projects, and watching developers go from their first widget to their first production app.
+              </p>
+            </div>
+
+            <div class="about-links" data-reveal data-delay="4">
+              <a href="https://github.com/alvaroarmijos" target="_blank" rel="noopener" class="about-link">
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/alvaro-armijos-sarango/" target="_blank" rel="noopener" class="about-link">
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CRAFT ═════════════════════════════════════════════ -->
+    <section class="craft" id="craft" aria-label="What I do">
+      <div class="craft-inner">
+
+        <div class="craft-header" data-reveal>
+          <p class="section-label">What I do</p>
+          <h2 class="craft-title">Built to last.</h2>
+        </div>
+
+        <div class="craft-grid">
+
+          <article class="craft-card" data-reveal>
+            <p class="craft-num">01</p>
+            <h3 class="craft-card-title">Mobile Engineering</h3>
+            <p class="craft-body">
+              Flutter from first commit to the App Store. I specialise in BLoC state management, clean layered architecture, Rive animations, and pixel-perfect interfaces that hold up across every screen size and platform quirk.
+            </p>
+            <div class="craft-tags" aria-label="Technologies">
+              <span class="craft-tag">Flutter</span>
+              <span class="craft-tag">Dart</span>
+              <span class="craft-tag">BLoC</span>
+              <span class="craft-tag">Rive</span>
+              <span class="craft-tag">iOS / Android</span>
+            </div>
+          </article>
+
+          <article class="craft-card" data-reveal data-delay="2">
+            <p class="craft-num">02</p>
+            <h3 class="craft-card-title">Quality at Scale</h3>
+            <p class="craft-body">
+              100% test coverage is the standard, not the stretch goal. Clean architecture, meaningful unit and widget tests, and CI/CD pipelines that catch regressions before users ever see them. Code I ship is code I'd inherit.
+            </p>
+            <div class="craft-tags" aria-label="Technologies">
+              <span class="craft-tag">Testing</span>
+              <span class="craft-tag">CI/CD</span>
+              <span class="craft-tag">Firebase</span>
+              <span class="craft-tag">Codemagic</span>
+              <span class="craft-tag">TypeScript</span>
+            </div>
+          </article>
+
+          <article class="craft-card" data-reveal data-delay="4">
+            <p class="craft-num">03</p>
+            <h3 class="craft-card-title">Teaching &amp; Mentoring</h3>
+            <p class="craft-body">
+              Two years as a Flutter instructor at the University of Hemisferios. I've designed training programmes from scratch, run internal workshops for product teams, and helped developers make the leap from junior to confident.
+            </p>
+            <div class="craft-tags" aria-label="Skills">
+              <span class="craft-tag">Curriculum Design</span>
+              <span class="craft-tag">Mentoring</span>
+              <span class="craft-tag">Workshops</span>
+              <span class="craft-tag">Flutter</span>
+            </div>
+          </article>
+
+          <article class="craft-card" data-reveal data-delay="6">
+            <p class="craft-num">04</p>
+            <h3 class="craft-card-title">AI-Augmented Engineering</h3>
+            <p class="craft-body">
+              I build with AI as a core tool, not an afterthought. Certified in Claude's agentic capabilities, I use AI to accelerate development, improve code review, and automate workflows — shipping faster without cutting corners on quality.
+            </p>
+            <div class="craft-tags" aria-label="Skills">
+              <span class="craft-tag">Claude</span>
+              <span class="craft-tag">Agentic AI</span>
+              <span class="craft-tag">Prompt Engineering</span>
+              <span class="craft-tag">AI Workflows</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ STATS ══════════════════════════════════════════════ -->
+    <section class="stats" id="stats" aria-label="Key statistics">
+      <div class="stats-inner">
+
+        <div class="stats-eyebrow" data-reveal>
+          <p class="section-label">By the numbers</p>
+        </div>
+
+        <div class="stats-grid">
+
+          <div class="stat-item" data-reveal data-delay="2">
+            <div class="stat-value" aria-label="20 plus projects">
+              <span data-count-to="20">20</span>+
+            </div>
+            <p class="stat-label">Projects shipped</p>
+          </div>
+
+          <div class="stat-item" data-reveal data-delay="3">
+            <div class="stat-value" aria-label="575 plus pull requests">
+              <span data-count-to="575">575</span>+
+            </div>
+            <p class="stat-label">Pull requests merged</p>
+          </div>
+
+          <div class="stat-item" data-reveal data-delay="4">
+            <div class="stat-value" aria-label="1165 plus contributions">
+              <span data-count-to="1165">1165</span>+
+            </div>
+            <p class="stat-label">Contributions 2025–2026</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CAREER ════════════════════════════════════════════ -->
+    <section class="career" id="career" aria-label="Career history">
+      <div class="career-inner">
+
+        <div class="career-header" data-reveal>
+          <p class="section-label">Career</p>
+          <h2 class="career-title">Where I've worked.</h2>
+        </div>
+
+        <ol class="career-list" reversed>
+
+          <!-- Very Good Ventures -->
+          <li class="career-item" data-reveal>
+            <div class="career-meta">
+              <p class="career-company">Very Good Ventures</p>
+              <p class="career-role">Software Engineer</p>
+              <p class="career-period">May 2024 — Present</p>
+            </div>
+            <div class="career-details">
+              <ul class="career-bullets">
+                <li>Achieved 85% test coverage — setting the quality standard across the project.</li>
+                <li>Optimised video player performance for fullscreen and Picture-in-Picture modes, resolving deep platform-level bugs.</li>
+                <li>Maintained Cloud Functions in TypeScript, integrating Firebase, BigQuery, and Google Cloud services.</li>
+              </ul>
+              <div class="career-tags" aria-label="Stack">
+                <span class="career-tag">Flutter</span>
+                <span class="career-tag">Bloc</span>
+                <span class="career-tag">Firebase</span>
+                <span class="career-tag">TypeScript</span>
+                <span class="career-tag">Rive</span>
+                <span class="career-tag">Codemagic</span>
+                <span class="career-tag">Google Cloud</span>
+                <span class="career-tag">Claude</span>
+              </div>
+            </div>
+          </li>
+
+          <!-- University of Hemisferios -->
+          <li class="career-item" data-reveal>
+            <div class="career-meta">
+              <p class="career-company">University of Hemisferios</p>
+              <p class="career-role">Flutter Instructor</p>
+              <p class="career-period">Jan 2024 — Feb 2026</p>
+            </div>
+            <div class="career-details">
+              <ul class="career-bullets">
+                <li>Designed and delivered a comprehensive Flutter course focused on real-world application development.</li>
+                <li>Guided students through BLoC, Firebase integration, Google Maps, and production deployment.</li>
+              </ul>
+              <div class="career-tags" aria-label="Stack">
+                <span class="career-tag">Flutter</span>
+                <span class="career-tag">Firebase</span>
+                <span class="career-tag">Bloc</span>
+                <span class="career-tag">Google Maps</span>
+                <span class="career-tag">Figma</span>
+              </div>
+            </div>
+          </li>
+
+          <!-- Formula.Monks -->
+          <li class="career-item" data-reveal>
+            <div class="career-meta">
+              <p class="career-company">Formula.Monks</p>
+              <p class="career-role">Flutter Developer</p>
+              <p class="career-period">Jun 2022 — Mar 2024</p>
+            </div>
+            <div class="career-details">
+              <ul class="career-bullets">
+                <li>Shipped features and fixes for a US-based product team, embedded as a remote Flutter developer.</li>
+                <li>Designed and ran a 4-week internal Flutter training programme for the engineering team.</li>
+                <li>Implemented CI/CD pipelines with Bitbucket, improving code-review and deployment workflows.</li>
+              </ul>
+              <div class="career-tags" aria-label="Stack">
+                <span class="career-tag">Flutter</span>
+                <span class="career-tag">Kotlin</span>
+                <span class="career-tag">Bitbucket</span>
+                <span class="career-tag">Firebase</span>
+                <span class="career-tag">Figma</span>
+              </div>
+            </div>
+          </li>
+
+          <!-- Talently -->
+          <li class="career-item" data-reveal>
+            <div class="career-meta">
+              <p class="career-company">Talently</p>
+              <p class="career-role">Flutter Developer Consultant</p>
+              <p class="career-period">Apr 2022 — May 2022</p>
+            </div>
+            <div class="career-details">
+              <ul class="career-bullets">
+                <li>Built a comprehensive admission test to assess candidates' Flutter knowledge and filter for the next stage of selection.</li>
+                <li>Designed a vetting assessment to evaluate Flutter developer proficiency across Junior, Semi-Senior, and Senior levels.</li>
+              </ul>
+              <div class="career-tags" aria-label="Stack">
+                <span class="career-tag">Flutter</span>
+                <span class="career-tag">Dart</span>
+              </div>
+            </div>
+          </li>
+
+          <!-- Clipp -->
+          <li class="career-item" data-reveal>
+            <div class="career-meta">
+              <p class="career-company">Clipp</p>
+              <p class="career-role">Mobile Developer</p>
+              <p class="career-period">Feb 2020 — Jun 2022</p>
+            </div>
+            <div class="career-details">
+              <ul class="career-bullets">
+                <li>Led the migration of native Android applications to Flutter, delivering measurable improvements in performance and user experience.</li>
+              </ul>
+              <div class="career-tags" aria-label="Stack">
+                <span class="career-tag">Flutter</span>
+                <span class="career-tag">Java</span>
+                <span class="career-tag">Kotlin</span>
+                <span class="career-tag">MongoDB</span>
+                <span class="career-tag">Node.js</span>
+              </div>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══════════════════════════════════════════ -->
+    <section class="contact" id="contact" aria-label="Contact Alvaro">
+      <div class="contact-inner">
+
+        <p class="section-label" data-reveal>Get in touch</p>
+
+        <h2 class="contact-title" data-reveal data-delay="1">
+          Let's build<br><em>something.</em>
+        </h2>
+
+        <p class="contact-sub" data-reveal data-delay="2">
+          Open to new projects, technical consulting, and challenges worth solving.
+          If you have something in mind, let's talk.
+        </p>
+
+        <a
+          href="mailto:alvaro.armijoss@gmail.com"
+          class="contact-email"
+          data-reveal data-delay="3"
+          data-scramble
+        >
+          alvaro.armijoss@gmail.com
+        </a>
+
+        <nav class="contact-social" aria-label="Social links" data-reveal data-delay="4">
+          <a
+            href="https://github.com/alvaroarmijos"
+            class="contact-soc"
+            target="_blank" rel="noopener noreferrer"
+          >GitHub</a>
+          <a
+            href="https://www.linkedin.com/in/alvaro-armijos-sarango/"
+            class="contact-soc"
+            target="_blank" rel="noopener noreferrer"
+          >LinkedIn</a>
+          <span class="contact-soc" style="pointer-events:none">Ecuador · GMT −5</span>
+        </nav>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── Footer ────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2026 Alvaro Armijos · Ecuador</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#hero"    class="footer-link">Top</a>
+        <a href="#about"   class="footer-link">About</a>
+        <a href="#career"  class="footer-link">Career</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ─── Scripts ───────────────────────────────────────── -->
+  <script defer src="lib/gsap.min.js"></script>
+  <script defer src="lib/ScrollTrigger.min.js"></script>
+  <script defer src="lib/manifest.js"></script>
+  <script defer src="main.js?v=20260517"></script>
+
 </body>
 </html>

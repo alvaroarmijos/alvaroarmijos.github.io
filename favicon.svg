@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#0c0c0c"/>
+  <!-- Flutter F mark in amber/gold -->
+  <polygon points="6,5 23,5 27,10 10,10" fill="#c4975a"/>
+  <polygon points="10,15 21,15 27,21 16,21" fill="#c4975a"/>
+  <polygon points="10,21 16,21 10,27 4,27" fill="#9a7440"/>
+  <polygon points="16,21 27,21 21,27 10,27" fill="#c4975a"/>
+</svg>
